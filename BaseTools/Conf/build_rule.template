@@ -267,7 +267,7 @@
         # Therefore, instead we post process the object file list into the right form
         # for AR (swapping the path separators) and pass the object list as a file.
         #
-        sed "s:\\:/:g" $(OBJECT_FILES_LIST) > $(OBJECT_FILES_LIST).unix
+        sed 's:\\:/:g' $(OBJECT_FILES_LIST) > $(OBJECT_FILES_LIST).unix
         "$(SLINK)" $(SLINK_FLAGS)  ${dst} @$(OBJECT_FILES_LIST).unix
 
     <Command.XCODE>
