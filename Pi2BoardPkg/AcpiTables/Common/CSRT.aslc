@@ -7,7 +7,7 @@ Environment:  UEFI ACPI 5.0
 Revision History:
 --*/
 
-#include "platform.h"
+#include "Platform.h"
 
 #define DMA_MAX_REQ_LINES 32
 
